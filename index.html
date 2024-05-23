@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Recipe page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-[#f3e6d8]">
+    <div
+      id="outergrid"
+      class="grid h-screen grid-rows-[1fr] grid-cols-[1fr] sm:grid-rows-[60px_1fr_60px] sm:grid-cols-[1fr_650px_1fr]"
+    >
+      <div
+        id="header"
+        class="sm:row-start-1 sm:row-end-2 sm:col-start-1 sm:col-end-6"
+      ></div>
+      <div
+        id="content"
+        class="flex flex-col row-start-1 row-end-2 col-start-1 col-end-2 sm:row-start-2 sm:row-end-3 sm:col-start-2 sm:col-end-3"
+      >
+        <div
+          id="card-container"
+          class="flex flex-col bg-white sm:p-8 sm:rounded-xl"
+        >
+          <div id="image-container" class="sm:overflow-hidden sm:rounded-xl">
+            <img src="assets/images/image-omelette.jpeg" alt="" srcset="" />
+          </div>
+          <div
+            id="content-container"
+            class="flex flex-col p-6 pt-9 font-['Outfit'] font-light text-[#302d2c] sm:p-0 sm:pt-9"
+          >
+            <div id="intro-container" class="mb-7 flex flex-col">
+              <h1 class="mb-3.5 text-4xl font-['Young_Serif']">
+                Simple Omelette Recipe
+              </h1>
+              <p class="font-['Outfit']">
+                An easy and quick dish, perfect for any meal. This classic
+                omelette combines beaten eggs cooked to perfection, optionally
+                filled with your choice of cheese, vegetables, or meats.
+              </p>
+            </div>
+            <div
+              id="preparation-container"
+              class="mb-6 flex flex-col p-5 rounded-lg bg-[#fff5fa]"
+            >
+              <h2 class="mb-2 text-xl font-bold text-[#7b284f]">
+                Preparation time
+              </h2>
+              <ul class="ml-5 list-disc">
+                <li>
+                  <span class="font-semibold">Total:</span> Approximately 10
+                  minutes
+                </li>
+                <li>
+                  <span class="font-semibold">Preparation:</span> 5 minutes
+                </li>
+                <li><span class="font-semibold">Cooking:</span> 5 minutes</li>
+              </ul>
+            </div>
+            <div
+              id="ingredients-container"
+              class="mb-6 flex flex-col pb-6 border-b border-[#e4ded8]"
+            >
+              <h2 class="mb-3 text-3xl font-['Young_Serif'] text-[#854632]">
+                Ingredients
+              </h2>
+              <ul class="ml-5 list-disc">
+                <li class="mb-0.5">2-3 large eggs</li>
+                <li class="mb-0.5">Salt, to taste</li>
+                <li class="mb-0.5">Pepper, to taste</li>
+                <li class="mb-0.5">1 tablespoon of butter or oil</li>
+                <li class="mb-0.5">
+                  Optional fillings: cheese, diced vegetables, cooked meats,
+                  herbs
+                </li>
+              </ul>
+            </div>
+            <div
+              id="instructions-container"
+              class="mb-6 flex flex-col pb-6 border-b border-[#e4ded8]"
+            >
+              <h2 class="mb-3 text-3xl font-['Young_Serif'] text-[#854632]">
+                Instructions
+              </h2>
+              <ol class="ml-5 list-decimal">
+                <li class="mb-2">
+                  <span class="font-semibold">Beat the eggs:</span> In a bowl,
+                  beat the eggs with a pinch of salt and pepper until they are
+                  well mixed. You can add a tablespoon of water or milk for a
+                  fluffier texture.
+                </li>
+                <li class="mb-2">
+                  <span class="font-semibold">Heat the pan:</span> Place a
+                  non-stick frying pan over medium heat and add butter or oil.
+                </li>
+                <li class="mb-2">
+                  <span class="font-semibold">Cook the omelette:</span> Once the
+                  butter is melted and bubbling, pour in the eggs. Tilt the pan
+                  to ensure the eggs evenly coat the surface.
+                </li>
+                <li class="mb-2">
+                  <span class="font-semibold">Add fillings (optional):</span>
+                  When the eggs begin to set at the edges but are still slightly
+                  runny in the middle, sprinkle your chosen fillings over one
+                  half of the omelette.
+                </li>
+                <li class="mb-2">
+                  <span class="font-semibold">Fold and serve:</span> As the
+                  omelette continues to cook, carefully lift one edge and fold
+                  it over the fillings. Let it cook for another minute, then
+                  slide it onto a plate.
+                </li>
+                <li class="">
+                  <span class="font-semibold">Enjoy:</span> Serve hot, with
+                  additional salt and pepper if needed.
+                </li>
+              </ol>
+            </div>
+            <div id="nutrition-container" class="flex flex-col">
+              <h2 class="mb-3 text-3xl font-['Young_Serif'] text-[#854632]">
+                Nutrition
+              </h2>
+              <p class="mb-3">
+                The table below shows nutritional values per serving without the
+                additional fillings.
+              </p>
+              <div id="nutrition-list-container" class="flex flex-col">
+                <div
+                  id="nutrition-item"
+                  class="flex border-b p-1.5 border-[#e4ded8]"
+                >
+                  <p id="nutrtition-name" class="ml-8 basis-1/2">Calories</p>
+                  <p
+                    id="nutrtition-value"
+                    class="basis-1/2 font-bold text-[#854632]"
+                  >
+                    277kcal
+                  </p>
+                </div>
+                <div
+                  id="nutrition-item"
+                  class="flex border-b p-1.5 border-[#e4ded8]"
+                >
+                  <p id="nutrtition-name" class="ml-8 basis-1/2">Carbs</p>
+                  <p
+                    id="nutrtition-value"
+                    class="basis-1/2 font-bold text-[#854632]"
+                  >
+                    0g
+                  </p>
+                </div>
+                <div
+                  id="nutrition-item"
+                  class="flex border-b p-1.5 border-[#e4ded8]"
+                >
+                  <p id="nutrtition-name" class="ml-8 basis-1/2">Protein</p>
+                  <p
+                    id="nutrtition-value"
+                    class="basis-1/2 font-bold text-[#854632]"
+                  >
+                    20g
+                  </p>
+                </div>
+                <div id="nutrition-item" class="flex p-1.5">
+                  <p id="nutrtition-name" class="ml-8 basis-1/2">Fat</p>
+                  <p
+                    id="nutrtition-value"
+                    class="basis-1/2 font-bold text-[#854632]"
+                  >
+                    22g
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        id="footer"
+        class="sm:row-start-3 sm:row-end-4 sm:col-start-1 sm:col-end-6"
+      ></div>
+    </div>
+  </body>
+</html>
